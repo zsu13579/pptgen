@@ -1,0 +1,7 @@
+('e:\\workspace\\blog_project_env\\lib\\site-packages\\python_pptx-0.5.8-py2.7.egg',
+ None,
+ set(['*.py', '*.pyc', '*.pyd', '*.pyo', '*.so', 'EGG-INFO']),
+ 'DATA',
+ [('pptx\\templates\\default.pptx',
+   'e:\\workspace\\blog_project_env\\lib\\site-packages\\python_pptx-0.5.8-py2.7.egg\\pptx\\templates\\default.pptx',
+   'DATA')])

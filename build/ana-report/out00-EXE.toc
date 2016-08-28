@@ -1,0 +1,9 @@
+('E:\\djangoWeb\\pptgen\\dist\\ana-report.exe',
+ True,
+ False,
+ None,
+ None,
+ [],
+ None,
+ False,
+ 1469764528L)

@@ -1,0 +1,29 @@
+database	table:
+1	mom_pptgen:	month	roam_type	count	countpct	user	userpct	callduration	calldurationpct	sms	smspct	dataall	datallpct	data23g	data23gpct	data4g	data4gpct	user4g	user4gpct	dou4g	dou4gpct
+month	roam_type	count	countpct	user	userpct	callduration	calldurationpct	sms	smspct	dataall	datallpct	data23g	data23gpct	data4g	data4gpct	user4g	user4gpct	dou4g	dou4gpct
+2	dod_pptgen:	date	roam_type	count	user	callduration	sms	dataall	data23g	data4g	user4g	dou4g
+
+3	first5_pptgen_carrier:	month	roam_type	busi_type	carrier_cd	percent	
+		first5_pptgen_prov:	month	roam_type	busi_type	prov_cd	percent
+
+4	carrier_open_4g:	month		roam_type		incr_num		acc_num
+
+
+1	
+create	table	mom_pptgen(month	int,	roam_type	int,count	float,	countpct	varchar(10),	user	float,	userpct	varchar(10),	callduration	float,	calldurationpct	varchar(10),	sms	float,	smspct	varchar(10),	dataall	float,	dataallpct	varchar(10),	data23g	float,	data23gpct	varchar(10),	data4g	float,	data4gpct	varchar(10),	user4g	float,	user4gpct	varchar(10),dou4g	float,	dou4gpct	varchar(10));
+create	table	dod_pptgen(date	int,	roam_type	int,count	float,		user	float,		callduration	float,	sms	float,		dataall	float,	data23g	float,	data4g	float,	user4g	float,	dou4g	float);
+
+insert	into	mom_pptgen	values(201507,1,1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%');
+insert	into	mom_pptgen	values(201508,1,1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%');
+insert	into	mom_pptgen	values(201509,1,1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%');
+insert	into	mom_pptgen	values(201510,1,1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%');
+insert	into	mom_pptgen	values(201511,1,1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%');
+insert	into	mom_pptgen	values(201512,1,1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%');
+insert	into	mom_pptgen	values(201601,1,1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%');
+insert	into	mom_pptgen	values(201602,1,1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%');
+insert	into	mom_pptgen	values(201603,1,1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%');
+insert	into	mom_pptgen	values(201604,1,1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%');
+insert	into	mom_pptgen	values(201605,1,1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%');
+insert	into	mom_pptgen	values(201606,1,1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%');
+insert	into	mom_pptgen	values(201607,1,1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%',1.2,'3%');
+
