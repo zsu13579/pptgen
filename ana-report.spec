@@ -1,6 +1,6 @@
 # -*- mode: python -*-
 a = Analysis(['ana-report.py'],
-             pathex=['E:\\djangoWeb\\pptgen'],
+             pathex=['D:\\babun\\.babun\\cygwin\\home\\lenovo\\dev\\pptgen'],
              hiddenimports=[],
              hookspath=None,
              runtime_hooks=None)

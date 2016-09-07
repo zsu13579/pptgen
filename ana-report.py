@@ -175,7 +175,7 @@ def createmomana(pagetitle,titlenm, unit, MONTH, ROAM_TYPE, BUSI_TYPE, bv):
     distcarriercdrdf = pd.read_excel("first5_pptgen_carrier.xlsx")
     distcarrierin = distcarriercdrdf[
         ['CARRIER_CD', 'PERCENT']][
-        (distcarriercdrdf.MONTH == int(MONTH)) & (distcarriercdrdf.ROAM_TYPE == ROAM_TYPE) & (distcarriercdrdf.BUSI_TYPE == BUSI_TYPE)]
+        (distcarriercdrdf.MONTH == int(MONTH)) & (distcarriercdrdf.ROAM_TYPE == ROAM_TYPE) & (distcarriercdrdf.BUSI_TYPE == BUSI_TYPE)].sort_values(by='PERCENT')
     valuetuple = distcarrierin.PERCENT.values
     valuetuplefirst5 = distcarrierin[distcarrierin.CARRIER_CD != 'Others'].PERCENT.values
 
@@ -207,18 +207,19 @@ def createmomana(pagetitle,titlenm, unit, MONTH, ROAM_TYPE, BUSI_TYPE, bv):
     distprovin = distprovcdrdf[
         ['ENGNM', 'PERCENT']][
         (distprovcdrdf.MONTH == int(MONTH)) & (distprovcdrdf.ROAM_TYPE == ROAM_TYPE) & (
-            distprovcdrdf.BUSI_TYPE == BUSI_TYPE)]
+            distprovcdrdf.BUSI_TYPE == BUSI_TYPE)].sort_values(by = 'PERCENT')
     valuetuple = distprovin.PERCENT.values
     valuetuplefirst5 = distprovin[distprovin.ENGNM != 'Others'].PERCENT.values
-
+    # print(valuetuple)
     # first5 PERCENT
     incdrfirstprovpls = slide.placeholders[11]
     incdrfirstprovpls.text = str(valuetuplefirst5.sum()*100)+'%'
 
     # define chart data
     chart_data = ChartData()
-    provCategories = ('BJ', 'GD', 'SH', 'JS', 'ZJ', 'Others')
-    # provCategories = distprovin.ENGNM.values
+    # provCategories = ('BJ', 'GD', 'SH', 'JS', 'ZJ', 'Others')
+    provCategories = distprovin.ENGNM.values
+    # print(provCategories)
     chart_data.categories = provCategories
 
     chart_data.add_series(title, valuetuple)
